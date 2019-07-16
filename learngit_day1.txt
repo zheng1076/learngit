@@ -1,0 +1,22 @@
+learning git day1
+
+git config --global user.name "your name"
+git config --global user.email "your email"
+git init # 把目录变成Git可以管理的仓库
+ls -ah # 查看隐藏的文件
+git add # 添加文件到仓库
+git commit -m "说明" # 文件提交到仓库
+git status # 查看仓库当前状态
+git diff 文件 #查看文件修改详情
+git log # 查看历史日志
+git log --pretty=oneline # 以行的方式显示
+git reset --hard HEAD^ # 退回上一个版本
+git reflog # 记录每一次git命令
+git reset HEAD readme.txt # 当文件修改已经add过了，用来撤销
+git checkout -- readme.txt # 用于撤销还未add的修改记录
+git rm 文件 # 删除文件后，记得commit
+ssh-keygen -t rsa -C "your email" # 创建SSH_key
+
+关联本地仓库
+git remote add origin https://github.com/zheng1076/learngit.git
+git push -u origin master
